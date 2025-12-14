@@ -15,6 +15,7 @@ public:
     Windows_System_Log(int id, 
     std::string synthesis_message,
     std::tm time_stamp, 
+    std::string source_log, 
     std::string source_message, 
     std::string host, 
     int processus_id,
@@ -29,7 +30,7 @@ public:
     std::string keywords,
     std::string task_category, 
     std::string operation_code): 
-        System_Logs(id, synthesis_message, time_stamp, source_message, host, processus_id, level, event_type, processus_name, user_context, severity),
+        System_Logs(id, synthesis_message, time_stamp, source_log, source_message, host, processus_id, level, event_type, processus_name, user_context, severity),
         Event_ID(event_id), 
         Event_Category(event_category), 
         Log_Name(log_name), 

@@ -13,6 +13,7 @@ public:
 Security_Logs(int id,
     std::string synthesis_message,
     std::tm time_stamp,
+    std::string source_log, 
     std::string source_message,
     std::string host,
     int processus_id,
@@ -22,7 +23,7 @@ Security_Logs(int id,
     std::string status,
     std::string session_id,
     std::string fail_reason)
-    : Logs(id, synthesis_message, time_stamp, source_message, host, user_or_user_context, "Security", processus_id, level), // a quoi  sert le securite?
+    : Logs(id, synthesis_message, time_stamp, source_log, source_message, host, user_or_user_context, "Security", processus_id, level), // a quoi  sert le securite?
       Ip_Adress(ip_adress),
       Status(status),
       Session_Id(session_id),

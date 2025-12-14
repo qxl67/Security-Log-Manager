@@ -16,6 +16,7 @@ public:
     Windows_Security_Log(int id, 
     std::string synthesis_message,
     std::tm time_stamp, 
+    std::string source_log, 
     std::string source_message, 
     std::string host, 
     int processus_id,
@@ -33,7 +34,7 @@ public:
     std::string object_type,
     std::string access_mask, 
     std::string authentication_package): 
-        Security_Logs(id, synthesis_message, time_stamp, source_message, host, processus_id, level, user, ip_adress, event_type, status, session_id, fail_reason),
+        Security_Logs(id, synthesis_message, time_stamp, source_log, source_message, host, processus_id, level, user, ip_adress, event_type, status, session_id, fail_reason),
         Event_ID(event_id), 
         Logon_Type(logon_type), 
         Account_Domain(account_domain), 
@@ -55,7 +56,8 @@ public:
 
 //INCERTITUDE DE LA SUITE A PARTIR DE LA
 
-    // Méthode de parsing a ajouter
+    // Méthode de parsing 
+ 
 
     // Prototype pour afficher
     void displayLogs() const override;

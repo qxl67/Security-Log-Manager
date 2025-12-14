@@ -13,7 +13,8 @@ protected:
 public:
     Linux_Secure(int id, 
     std::string synthesis_message,
-    std::tm time_stamp, 
+    std::tm time_stamp,
+    std::string source_log, 
     std::string source_message, 
     std::string host, 
     int processus_id,
@@ -29,7 +30,7 @@ public:
     std::string priority, 
     std::string command, 
     std::string terminal): 
-        Security_Logs(id, synthesis_message, time_stamp, source_message, host, processus_id, level, user, ip_adress, event_type, status, session_id, fail_reason),
+        Security_Logs(id, synthesis_message, time_stamp, source_log, source_message, host, processus_id, level, user, ip_adress, event_type, status, session_id, fail_reason),
         Service(service), 
         Facility(facility), 
         Priority(priority), 

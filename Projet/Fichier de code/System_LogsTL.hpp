@@ -11,6 +11,7 @@ public:
 System_Logs(int id,
     std::string synthesis_message,
     std::tm time_stamp,
+    std::string source_log, 
     std::string source_message,
     std::string host,
     int processus_id,
@@ -19,7 +20,7 @@ System_Logs(int id,
     std::string processus_name,
     std::string user_or_user_context,
     std::string severity)
-    : Logs(id, synthesis_message, time_stamp, source_message, host, user_or_user_context, event_type, processus_id, level),
+    : Logs(id, synthesis_message, time_stamp, source_log, source_message, host, user_or_user_context, event_type, processus_id, level),
       Processus_name(processus_name),
       Severity(severity) {}
 
@@ -30,7 +31,7 @@ System_Logs(int id,
 
 //INCERTITUDE DE LA SUITE A PARTIR DE LA
 
-    // Méthode de parsing a ajouter
+    // Méthode de parsing 
 
     // Prototype pour afficher
     void displayLogs() const override;
