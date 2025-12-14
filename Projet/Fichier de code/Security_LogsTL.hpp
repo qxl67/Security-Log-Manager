@@ -35,6 +35,9 @@ Security_Logs(int id,
     std::string getSessionId() const { return Session_Id; }
     std::string getFailReason() const { return Fail_Reason; }
 
+
+    //INCERTITUDE DE LA SUITE A PARTIR DE LA
+
     // Méthode de parsing a ajouter
 
     // Méthode pour afficher

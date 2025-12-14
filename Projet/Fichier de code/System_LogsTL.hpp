@@ -28,6 +28,8 @@ System_Logs(int id,
     std::string getEventID() const { return Event_ID; }
     std::string getLogonType() const { return Logon_Type; }
 
+//INCERTITUDE DE LA SUITE A PARTIR DE LA
+
     // Méthode de parsing a ajouter
 
     // Prototype pour afficher

@@ -52,6 +52,9 @@ public:
     std::string getAccessMask() const { return Access_Mask; }
     std::string getAuthenticationPackage() const { return Authentication_Package; }
 
+
+//INCERTITUDE DE LA SUITE A PARTIR DE LA
+
     // Méthode de parsing a ajouter
 
     // Prototype pour afficher

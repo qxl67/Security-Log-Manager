@@ -44,6 +44,9 @@ public:
     std::string getCommand() const { return Command; }
     std::string getTerminal() const { return Terminal; }
 
+
+    //INCERTITUDE DE LA SUITE A PARTIR DE LA
+
     // Méthode de parsing a ajouter
 
     //Prototype pour afficher

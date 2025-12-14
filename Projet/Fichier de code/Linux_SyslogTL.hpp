@@ -42,6 +42,8 @@ public:
     std::string getProgram() const { return Program; }
     std::string getProcessusIdStr() const { return Processus_Id_Str; }
 
+    //INCERTITUDE DE LA SUITE A PARTIR DE LA
+
     // Méthode de parsing a ajouter
 
     //Prototype pour afficher

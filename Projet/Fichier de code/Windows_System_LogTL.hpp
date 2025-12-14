@@ -46,6 +46,8 @@ public:
     std::string getTaskCategory() const { return Task_Category; }
     std::string getOperationCode() const { return Operation_Code; }
 
+    //INCERTITUDE DE LA SUITE A PARTIR DE LA
+
     // Méthode de parsing a ajouter
 
     //Prototype pour afficher

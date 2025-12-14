@@ -38,7 +38,7 @@ public: // Permet de creer le constructeur
     ~Logs(); // Destructeur
 
     // Getters, determiner quels sont les attributs a utiliser dans l'algo. Ici, ils sont tous en getter, mais on pourrait limiter la selection pour plus de sécurité.
-    // on commentera les logs qu'on utilisera pas
+    // on commentera les attributs qu'on utilisera pas
     int getId() const { return Id_Logs; }
     std::tm getTimeStamp() const { return Time_stamp; }
     std::string getSourceMessage() const { return Source_Message; }
@@ -46,6 +46,9 @@ public: // Permet de creer le constructeur
     std::string getUserOrUserContext() const { return User_or_User_Context; }
     std::string getEventType() const { return Event_Type; }
     int getProcessusId() const { return Processus_Id; }
+    
+
+    //INCERTITUDE DE LA SUITE A PARTIR DE LA
 
      // Setters (si nécessaire)
     void setSynthesis_message(const std::string& synthesis_message); {
