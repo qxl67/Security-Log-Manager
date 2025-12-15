@@ -57,7 +57,7 @@ public: // Permet de creer le constructeur
     int getLevel() const { return Level; }
     
 
-    //INCERTITUDE DE LA SUITE A PARTIR DE LA
+    //INCERTITUDE DE LA SUITE A PARTIR DE LA. AJOUTER LES METHODES NECESSAIRES
 
      // Setters (si nécessaire)
     void setSynthesis_message(const std::string& synthesis_message); 
@@ -69,4 +69,10 @@ public: // Permet de creer le constructeur
 
     // Prototype pour afficher les logs
     virtual void displayLogs() const;
+
+    // Méthodes pour appliquer les filtres // A VERIFIER
+    std::vector<LogEntry> applyFilter(const Event_Log_Filter& filter) const;
+    std::vector<LogEntry> sortLogs(const Event_Log_Filter& filter) const;
+    std::vector<LogEntry> orderLogs(const Event_Log_Filter& filter) const;
+
 };
