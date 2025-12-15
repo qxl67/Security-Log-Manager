@@ -2,7 +2,7 @@
 
 class Event_Rapport {
 public:
-    enum class EnventPriority {
+    enum class EventPriority {
         IMMEDIATE,
         LATER
     };
@@ -12,16 +12,16 @@ public:
         std::string recommendation,
         EventPriority event_priority = EventPriority::IMMEDIATE,
         std::tm time_stamp = {}): 
-            Id_Event_Priority(id_event_rapport),
+            Id_Event_Rapport(id_event_rapport),
             Recommendation(recommendation),
             Event_Priority(event_priority),
             Time_Stamp(time_stamp) {}
 
-    // Getters corrigés
-    //Getters a commanter selon les besoins
+    // Getters
+    //Getters a commenter selon les besoins
     int getIdEventRapport() const { return Id_Event_Rapport; }
     std::string getRecommendation() const { return Recommendation; }
-    EventGravity getEventPriority() const { return Event_Priority; }
+    EventPriority getEventPriority() const { return Event_Priority; }
     std::tm getTimeStamp() const { return Time_Stamp; }
 
 
