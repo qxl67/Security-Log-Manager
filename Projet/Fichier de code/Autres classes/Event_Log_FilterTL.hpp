@@ -1,41 +1,32 @@
 #include <iostream>
+#include "Logs.hpp"
 
 class Event_Log_Filter {
-
-public: 
-    enum class SortBy {
-        DATE_HEURE,
-        LEVEL
+public:
+    enum class AssetType {
+        SECURITY_EVENT,
+        LOGS
     };
 
-// Permet de creer le constructeur
+    // Constructeur 
     Event_Log_Filter(int id_filter,
-        const std::string& filter_criteria = "", //on part sur un principe de barre de recherche. On saisi une donnée
-        SortBy sort_by = SortBy::DATE_HEURE):
+        AssetType asset_type = AssetType::SECURITY_EVENT,
+        const std::string& filter_criteria = ""):     //preciser qu'il faut seulement saisir l'une des valeur allouée aux attributs de la classe Logs (pas de recherche dans les classe heritiére, ca serait trop compliqué)
             Id_Filter(id_filter),
-            Filter_Criteria(filter_criteria),
-            Sort_By(sort_by) {}
+            Asset_Type(asset_type),
+            Filter_Criteria(filter_criteria) {}
 
-// Getters
-// a commenter selon les besoins
+    // Getters
     int getIdFilter() const { return Id_Filter; }
+    AssetType getAssetType() const { return Asset_Type; }
     std::string getFilterCriteria() const { return Filter_Criteria; }
-    SortBy getSortBy() const { return Sort_By; }
-    
+
+    // Méthodes de filtrage
+    //std::vector<Logs*> applyFilter(const std::vector<Logs*>& logs) const;
 
 private:
     int Id_Filter;
+    AssetType Asset_Type;
     std::string Filter_Criteria;
-    SortBy Sort_By;
-
-//AJOUTER LES METHODES
-    //On veut renvoyer les valeurs du eventlogfilter pour reformater les le visuel des Logs. On est a priori sur une methode virtuel
-
-     // Méthode pour appliquer le filtre sur une liste de logs
-    std::vector<std::string> applyFilter(const std::vector<std::string>& logs) const;
-
-    // Méthode pour trier les logs
-    std::vector<std::string> sortLogs(std::vector<std::string> logs) const;
-
 };
 

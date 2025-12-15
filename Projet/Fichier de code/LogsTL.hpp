@@ -64,15 +64,14 @@ public: // Permet de creer le constructeur
     // permet de saisir un message resumant l'entrée du log, le completion du message n'est pas obligatoire
 
     // Prototype pour le parsing (à redéfinir dans les sous-classes)
-    virtual Logs* parseLogsEntree(const std::string& LogsEntree) = 0;
+    //virtual Logs* parseLogsEntree(const std::string& LogsEntree) = 0;
     //!DEFINIR LA FONCTION DE PARSE!
 
     // Prototype pour afficher les logs
     virtual void displayLogs() const;
 
-    // Méthodes pour appliquer les filtres // A VERIFIER
-    std::vector<LogEntry> applyFilter(const Event_Log_Filter& filter) const;
-    std::vector<LogEntry> sortLogs(const Event_Log_Filter& filter) const;
-    std::vector<LogEntry> orderLogs(const Event_Log_Filter& filter) const;
+    // Méthodes pour appliquer la recherche dans les filtres // A VERIFIER
+    //virtual bool contains(const std::string& criteria) const;
+
 
 };
