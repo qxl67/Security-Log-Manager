@@ -1,0 +1,324 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+     <Event>  
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4672</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>12548</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:40:41.6840217Z" /> 
+            <EventRecordID>2225196</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="2380" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="SubjectUserSid">S-1-5-18</Data> 
+            <Data Name="SubjectUserName">Système</Data> 
+            <Data Name="SubjectDomainName">AUTORITE NT</Data> 
+            <Data Name="SubjectLogonId">0x3e7</Data> 
+            <Data Name="PrivilegeList">SeAssignPrimaryTokenPrivilege SeTcbPrivilege SeSecurityPrivilege SeTakeOwnershipPrivilege SeLoadDriverPrivilege SeBackupPrivilege SeRestorePrivilege SeDebugPrivilege SeAuditPrivilege SeSystemEnvironmentPrivilege SeImpersonatePrivilege SeDelegateSessionUserImpersonatePrivilege</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4627</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>12554</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:40:41.6839979Z" /> 
+            <EventRecordID>2225195</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="2380" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="SubjectUserSid">S-1-5-18</Data> 
+            <Data Name="SubjectUserName">UL200011772$</Data> 
+            <Data Name="SubjectDomainName">ADLYON2</Data> 
+            <Data Name="SubjectLogonId">0x3e7</Data> 
+            <Data Name="TargetUserSid">S-1-5-18</Data> 
+            <Data Name="TargetUserName">Système</Data> 
+            <Data Name="TargetDomainName">AUTORITE NT</Data> 
+            <Data Name="TargetLogonId">0x3e7</Data> 
+            <Data Name="LogonType">5</Data> 
+            <Data Name="EventIdx">1</Data> 
+            <Data Name="EventCountTotal">1</Data> 
+            <Data Name="GroupMembership">%{S-1-5-32-544} %{S-1-1-0} %{S-1-5-11} %{S-1-16-16384}</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4624</EventID> 
+            <Version>3</Version> 
+            <Level>0</Level> 
+            <Task>12544</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:40:41.6839715Z" /> 
+            <EventRecordID>2225194</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="2380" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="SubjectUserSid">S-1-5-18</Data> 
+            <Data Name="SubjectUserName">UL200011772$</Data> 
+            <Data Name="SubjectDomainName">ADLYON2</Data> 
+            <Data Name="SubjectLogonId">0x3e7</Data> 
+            <Data Name="TargetUserSid">S-1-5-18</Data> 
+            <Data Name="TargetUserName">Système</Data> 
+            <Data Name="TargetDomainName">AUTORITE NT</Data> 
+            <Data Name="TargetLogonId">0x3e7</Data> 
+            <Data Name="LogonType">5</Data> 
+            <Data Name="LogonProcessName">Advapi</Data> 
+            <Data Name="AuthenticationPackageName">Negotiate</Data> 
+            <Data Name="WorkstationName">-</Data> 
+            <Data Name="LogonGuid">{00000000-0000-0000-0000-000000000000}</Data> 
+            <Data Name="TransmittedServices">-</Data> 
+            <Data Name="LmPackageName">-</Data> 
+            <Data Name="KeyLength">0</Data> 
+            <Data Name="ProcessId">0x794</Data> 
+            <Data Name="ProcessName">C:\Windows\System32\services.exe</Data> 
+            <Data Name="IpAddress">-</Data> 
+            <Data Name="IpPort">-</Data> 
+            <Data Name="ImpersonationLevel">%%1833</Data> 
+            <Data Name="RestrictedAdminMode">-</Data> 
+            <Data Name="RemoteCredentialGuard">-</Data> 
+            <Data Name="TargetOutboundUserName">-</Data> 
+            <Data Name="TargetOutboundDomainName">-</Data> 
+            <Data Name="VirtualAccount">%%1843</Data> 
+            <Data Name="TargetLinkedLogonId">0x0</Data> 
+            <Data Name="ElevatedToken">%%1842</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4670</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>13570</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:40:34.8680166Z" /> 
+            <EventRecordID>2225193</EventRecordID> 
+            <Correlation /> 
+            <Execution ProcessID="4" ThreadID="25908" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+        <Data Name="SubjectUserSid">S-1-5-18</Data> 
+        <Data Name="SubjectUserName">UL200011772$</Data> 
+        <Data Name="SubjectDomainName">ADLYON2</Data> 
+        <Data Name="SubjectLogonId">0x3e7</Data> 
+        <Data Name="ObjectServer">Security</Data> 
+        <Data Name="ObjectType">Token</Data> 
+        <Data Name="ObjectName">-</Data> 
+        <Data Name="HandleId">0x650</Data> 
+        <Data Name="OldSd">D:(A;;GA;;;SY)(A;;GA;;;NS)</Data> 
+        <Data Name="NewSd">D:(A;;GA;;;SY)(A;;RC;;;OW)(A;;GA;;;S-1-5-86-615999462-62705297-2911207457-59056572-3668589837)</Data> 
+        <Data Name="ProcessId">0x10b0</Data> 
+        <Data Name="ProcessName">C:\Windows\System32\svchost.exe</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4911</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>13570</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:39:54.4785270Z" /> 
+            <EventRecordID>2225192</EventRecordID> 
+            <Correlation /> 
+            <Execution ProcessID="4" ThreadID="18276" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="SubjectUserSid">S-1-5-21-515422283-4077433341-1561936192-369031</Data> 
+            <Data Name="SubjectUserName">tlecomte1</Data> 
+            <Data Name="SubjectDomainName">ADLYON2</Data> 
+            <Data Name="SubjectLogonId">0x1a8d3797</Data> 
+            <Data Name="ObjectServer">Security</Data> 
+            <Data Name="ObjectType">File</Data> 
+            <Data Name="ObjectName">C:\Users\tlecomte1\AppData\Roaming\Code\User\History\-4c4452a2\tkEJ.hpp</Data> 
+            <Data Name="HandleId">0x56c</Data> 
+            <Data Name="OldSd" /> 
+            <Data Name="NewSd">S:ARAI(RA;;;;;WD;("IMAGELOAD",TU,0x0,1))</Data> 
+            <Data Name="ProcessId">0x2444</Data> 
+            <Data Name="ProcessName">C:\Program Files\Microsoft VS Code\Code.exe</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>5379</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>13824</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:39:00.5794774Z" /> 
+            <EventRecordID>2225178</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="2380" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="SubjectUserSid">S-1-5-21-515422283-4077433341-1561936192-369031</Data> 
+            <Data Name="SubjectUserName">tlecomte1</Data> 
+            <Data Name="SubjectDomainName">ADLYON2</Data> 
+            <Data Name="SubjectLogonId">0x1a8d3797</Data> 
+            <Data Name="TargetName">Adobe Proxy Username(Part1)</Data> 
+            <Data Name="Type">1</Data> 
+            <Data Name="CountOfCredentialsReturned">1</Data> 
+            <Data Name="ReadOperation">%%8099</Data> 
+            <Data Name="ReturnCode">3221226021</Data> 
+            <Data Name="ProcessCreationTime">2025-12-16T09:08:49.3807833Z</Data> 
+            <Data Name="ClientProcessId">29108</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4627</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>12554</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:22:22.0287203Z" /> 
+            <EventRecordID>2225101</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="2380" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="SubjectUserSid">S-1-5-18</Data> 
+            <Data Name="SubjectUserName">UL200011772$</Data> 
+            <Data Name="SubjectDomainName">ADLYON2</Data> 
+            <Data Name="SubjectLogonId">0x3e7</Data> 
+            <Data Name="TargetUserSid">S-1-5-18</Data> 
+            <Data Name="TargetUserName">Système</Data> 
+            <Data Name="TargetDomainName">AUTORITE NT</Data> 
+            <Data Name="TargetLogonId">0x3e7</Data> 
+            <Data Name="LogonType">5</Data> 
+            <Data Name="EventIdx">1</Data> 
+            <Data Name="EventCountTotal">1</Data> 
+            <Data Name="GroupMembership">%{S-1-5-32-544} %{S-1-1-0} %{S-1-5-11} %{S-1-16-16384}</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4799</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>13826</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:22:16.2853942Z" /> 
+            <EventRecordID>2225091</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="29408" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+        <Data Name="TargetUserName">Opérateurs de sauvegarde</Data> 
+        <Data Name="TargetDomainName">Builtin</Data> 
+        <Data Name="TargetSid">S-1-5-32-551</Data> 
+        <Data Name="SubjectUserSid">S-1-5-18</Data> 
+        <Data Name="SubjectUserName">UL200011772$</Data> 
+        <Data Name="SubjectDomainName">ADLYON2</Data> 
+        <Data Name="SubjectLogonId">0x3e7</Data> 
+        <Data Name="CallerProcessId">0x3718</Data> 
+        <Data Name="CallerProcessName">C:\Windows\System32\SearchIndexer.exe</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>4948</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>13571</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:18:44.9350037Z" /> 
+            <EventRecordID>2224998</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="2380" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="ProfileChanged">All</Data> 
+            <Data Name="RuleId">adobe.acrobatreaderdc.protectedmode-Out-Block</Data> 
+            <Data Name="RuleName">Adobe Acrobat Reader Protected Mode</Data> 
+        </EventData>
+    </Event>
+
+    <Event>
+        <System>
+            <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" /> 
+            <EventID>5449</EventID> 
+            <Version>0</Version> 
+            <Level>0</Level> 
+            <Task>13572</Task> 
+            <Opcode>0</Opcode> 
+            <Keywords>0x8020000000000000</Keywords> 
+            <TimeCreated SystemTime="2025-12-16T09:18:44.9349807Z" /> 
+            <EventRecordID>2224997</EventRecordID> 
+            <Correlation ActivityID="{1add10f3-651e-000a-4011-dd1a1e65dc01}" /> 
+            <Execution ProcessID="1992" ThreadID="18928" /> 
+            <Channel>Security</Channel> 
+            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Security /> 
+        </System>
+        <EventData>
+            <Data Name="ProcessId">3272</Data> 
+            <Data Name="UserSid">S-1-5-19</Data> 
+            <Data Name="UserName">AUTORITE NT\SERVICE LOCAL</Data> 
+            <Data Name="ProviderKey">{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}</Data> 
+            <Data Name="ProviderName">Microsoft Corporation</Data> 
+            <Data Name="ChangeType">%%16385</Data> 
+            <Data Name="ProviderContextKey">{1620c143-fc17-4500-8d65-ca43cfb4934f}</Data> 
+            <Data Name="ProviderContextName">MPSSVC</Data> 
+            <Data Name="ProviderContextType">%%16388</Data> 
+        </EventData>
+    </Event>   
+</Event>

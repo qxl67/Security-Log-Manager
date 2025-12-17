@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events log_type="syslog" os="linux">
+  <event>
+    <timestamp>Oct 11 22:14:01</timestamp>
+    <hostname>server1</hostname>
+    <process>systemd</process>
+    <pid>1</pid>
+    <severity>info</severity>
+    <message>Started Daily apt download activities.</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:16:43</timestamp>
+    <hostname>server1</hostname>
+    <process>systemd</process>
+    <pid>1</pid>
+    <severity>info</severity>
+    <message>Stopped User Manager for UID 1000.</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:20:12</timestamp>
+    <hostname>server1</hostname>
+    <process>CRON</process>
+    <pid>2145</pid>
+    <severity>info</severity>
+    <message>(root) CMD (/usr/lib/apt/apt.systemd.daily)</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:22:55</timestamp>
+    <hostname>server1</hostname>
+    <process>NetworkManager</process>
+    <pid>712</pid>
+    <severity>info</severity>
+    <message>device (eth0): state change: activated</message>
+  </event>
+
+  <event >
+    <timestamp>Oct 11 22:25:31</timestamp>
+    <hostname>server1</hostname>
+    <process>systemd-resolved</process>
+    <pid>512</pid>
+    <severity>warning</severity>
+    <message>Server returned error NXDOMAIN</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:28:09</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <pid>654</pid>
+    <severity>info</severity>
+    <message>Server listening on 0.0.0.0 port 22.</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:30:44</timestamp>
+    <hostname>server1</hostname>
+    <process>myapp</process>
+    <pid>2341</pid>
+    <severity>error</severity>
+    <message>Failed to open configuration file</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:33:10</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>info</severity>
+    <message>EXT4-fs (sda1): mounted filesystem</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:35:58</timestamp>
+    <hostname>server1</hostname>
+    <process>logrotate</process>
+    <pid>3210</pid>
+    <severity>info</severity>
+    <message>rotating pattern: /var/log/syslog</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 11 22:38:21</timestamp>
+    <hostname>server1</hostname>
+    <process>apt</process>
+    <pid>4321</pid>
+    <severity>info</severity>
+    <message>Installed linux-image-5.15.0</message>
+  </event>
+
+</events>

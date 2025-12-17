@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events log_type="secure" os="linux">
+
+<!-- Scenario d'attaque par brute force. On part sur les caractéristiques suivante:
+3 échecs SSH, même utilisateur, même IP d'origine, delais de 30 secondes--> 
+
+  <event>
+    <timestamp>Oct 12 01:14:01</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>info</severity>
+    <action>login_attempt</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Connection attempt</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:14:07</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:14:15</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:14:22</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>critical</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <correlation_hint>multiple_failures_short_time</correlation_hint>
+    <message>Failed password for admin (3rd attempt)</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:14:25</timestamp>
+    <hostname>server1</hostname>
+    <process>pam_tally2</process>
+    <severity>critical</severity>
+    <action>account_locked</action>
+    <user>admin</user>
+    <message>User locked due to repeated authentication failures</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:15:10</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>info</severity>
+    <action>disconnect</action>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Disconnected from unauthenticated user</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:18:42</timestamp>
+    <hostname>server1</hostname>
+    <process>sudo</process>
+    <severity>info</severity>
+    <action>privilege_escalation</action>
+    <user>user1</user>
+    <command>/usr/bin/systemctl status ssh</command>
+    <message>Command executed with sudo</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:20:05</timestamp>
+    <hostname>server1</hostname>
+    <process>systemd-logind</process>
+    <severity>info</severity>
+    <action>session_opened</action>
+    <user>user1</user>
+    <message>New session opened</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 01:22:33</timestamp>
+    <hostname>server1</hostname>
+    <process>passwd</process>
+    <severity>info</severity>
+    <action>password_change</action>
+    <user>user1</user>
+    <message>Password changed</message>
+  </event>
+
+</events>

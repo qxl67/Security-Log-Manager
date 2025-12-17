@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events log_type="syslog" os="linux">
+
+<!-- Scenario de scan de port et d'énumération. On part sur les caractéristiques suivante:
+Ping répétés, scan de plusieurs ports, même IP source, laps de temps court--> 
+
+  <event>
+    <timestamp>Oct 12 02:05:01</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>info</severity>
+    <message>ICMP echo request from 198.51.100.23</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:05:03</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>info</severity>
+    <message>ICMP echo request from 198.51.100.23</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:05:05</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>info</severity>
+    <message>ICMP echo request from 198.51.100.23</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:05:10</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>warning</severity>
+    <message>TCP SYN scan detected on port 22 from 198.51.100.23</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:05:11</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>warning</severity>
+    <message>TCP SYN scan detected on port 80 from 198.51.100.23</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:05:12</timestamp>
+    <hostname>server1</hostname>
+    <process>kernel</process>
+    <severity>critical</severity>
+    <correlation_hint>multiple_ports_same_source</correlation_hint>
+    <message>Possible port scan detected from 198.51.100.23</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:05:30</timestamp>
+    <hostname>server1</hostname>
+    <process>firewalld</process>
+    <severity>info</severity>
+    <action>block</action>
+    <source_ip>198.51.100.23</source_ip>
+    <message>Source temporarily blocked due to suspicious activity</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:06:12</timestamp>
+    <hostname>server1</hostname>
+    <process>systemd</process>
+    <severity>info</severity>
+    <message>Reloaded firewall rules</message>
+  </event>
+
+  <event>
+    <timestamp>Oct 12 02:07:44</timestamp>
+    <hostname>server1</hostname>
+    <process>NetworkManager</process>
+    <severity>info</severity>
+    <message>Network connectivity unchanged</message>
+  </event>
+
+</events>
