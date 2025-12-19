@@ -49,7 +49,7 @@
     <message>Failed password for admin (3rd attempt)</message>
   </event>
 
-  <event>
+  <!-- <event>
     <timestamp>Oct 12 01:14:25</timestamp>
     <hostname>server1</hostname>
     <process>pam_tally2</process>
@@ -57,7 +57,7 @@
     <action>account_locked</action>
     <user>admin</user>
     <message>User locked due to repeated authentication failures</message>
-  </event>
+  </event>--> 
 
   <event>
     <timestamp>Oct 12 01:15:10</timestamp>
@@ -99,5 +99,6 @@
     <user>user1</user>
     <message>Password changed</message>
   </event>
+
 
 </events>
