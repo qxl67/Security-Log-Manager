@@ -21,7 +21,7 @@ protected:
 public:
 Windows_System_Logs(int id, 
     std::string synthesis_message,
-    std::string time_stamp, 
+    std::time_T time_stamp, 
     std::string source_log,
     std::string source_message, 
     int processus_id,
@@ -76,4 +76,5 @@ Windows_System_Logs(int id,
     void displayLogs() const override;
 
     //verifier si d'autre methodes sont necessaires a implanter
+
 };
