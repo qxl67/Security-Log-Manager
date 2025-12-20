@@ -13,7 +13,7 @@ public:
         std::string recommendation,
         EventPriority event_priority = EventPriority::IMMEDIATE,
         std::vector<Security_Event*> associated_event = {},
-        std::tm time_stamp = {}):                               // LE TIME STAMP PEUT ETRE DE TYPE TM (time stamp) OU DE TYPE STRING. PERSO JE RECOMMENDE TIME_STAMP
+        std::time_t time_stamp = {}):                               // LE TIME STAMP PEUT ETRE DE TYPE TM (time stamp) OU DE TYPE STRING. PERSO JE RECOMMENDE TIME_STAMP
             Id_Event_Rapport(id_event_rapport),
             Recommendation(recommendation),
             Event_Priority(event_priority),
@@ -25,7 +25,7 @@ public:
     std::string getRecommendation() const { return Recommendation; }
     EventPriority getEventPriority() const { return Event_Priority; }
     std::vector<Security_Event*> getAssociated_Event() const { return Associated_Event; }
-    std::tm getTimeStamp() const { return Time_Stamp; }
+    std::time_t getTimeStamp() const { return Time_Stamp; }
 
 
 private:
@@ -33,7 +33,7 @@ private:
     std::string Recommendation;
     EventPriority Event_Priority;
     std::vector<Security_Event*> Associated_Event;
-    std::tm Time_Stamp;
+    std::time_t Time_Stamp;
 
 //CREER LE PROTOTYPE ET LA METHODE POUR RECUPERER ET COMPILER LES SECURITY_EVENT DANS UN MEME RAPPORT
     //CREER UN MODELE DE RAPPORT
@@ -56,5 +56,6 @@ private:
         //std::tm time_stamp = {}
     );
     
+
 
 };
