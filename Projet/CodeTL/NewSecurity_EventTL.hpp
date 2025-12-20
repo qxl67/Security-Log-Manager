@@ -14,7 +14,7 @@ public:
         std::string description,                    
         EventGravity event_gravity = EventGravity::HIGH,
         std::vector<Logs*> associated_logs = {},
-        std::tm time_stamp = {}): 
+        std::time_T time_stamp = {}): 
             Id_Security_Event(id_security_event),
             Description(description),
             Event_Gravity(event_gravity),
@@ -27,7 +27,7 @@ public:
     std::string getDescription() const { return Description; }
     EventGravity getEventGravity() const { return Event_Gravity; }
     std::vector<Logs*> getAssociatedLogs() const { return Associated_Logs; }
-    std::tm getTimeStamp() const { return Time_Stamp; }
+    std::time_T getTimeStamp() const { return Time_Stamp; }
 
 
     //CREER UN PROTOTYPE ET SA METHODE POUR DETECTER UNE ATTAQUE = THOMAS S'OCCUPE DE L'ALGO DE DETECTION
@@ -42,6 +42,7 @@ private:
     std::string Description;
     EventGravity Event_Gravity;
     std::vector<Logs*> Associated_Logs;
-    std::tm Time_Stamp;
+    std::time_T Time_Stamp;
+
 
 };
