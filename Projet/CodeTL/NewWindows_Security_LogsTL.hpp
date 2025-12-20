@@ -20,7 +20,7 @@ protected:
 public:
 Windows_Security_Logs(int id, 
     std::string synthesis_message,
-    std::time_T time_stamp, 
+    std::time_t time_stamp, 
     std::string source_log,
     std::string source_message, 
     int processus_id,
@@ -74,3 +74,4 @@ Windows_Security_Logs(int id,
     //verifier si d'autre methodes sont necessaires a implanter
 
 };
+
