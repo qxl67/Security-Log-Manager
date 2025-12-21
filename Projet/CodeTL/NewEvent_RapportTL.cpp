@@ -96,5 +96,4 @@ std::vector<Event_Rapport> Event_Rapport::createRapport(std::vector<Security_Eve
     return rapports;
 }
 
-
-//AJOUTER UNE FONCTION POUR EXPORTER LES RAPPORTS VERS LES ARCHIVES
+//Proposer d'archiver le document

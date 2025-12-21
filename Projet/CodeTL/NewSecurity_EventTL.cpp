@@ -14,11 +14,11 @@ struct Connection_Attempt{
         std::time_t Last_Attempt_time;
         };
 
-bool delay(std::time_t First_Time, std::time_t Last_Time, int Max_Time) {
+bool Security_Event::delay(std::time_t First_Time, std::time_t Last_Time, int Max_Time) {
     return std::difftime(Last_Time, First_Time) <= Max_Time;      // regler pour un écart de 5 sec entre chaque tentative, attemtion Max_Time renvera toujours des valeurs en seconde
 }
 
-void Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Windows_System_Logs& WSysL, const Linux_Syslog& LSys, const Linux_Secure& LSec, Security_Event& Export_event){                //POUR L'ANALYSE ON VA SEULEMENT PRENDRE LE NOMBRE LIMITÉ DATTRIBUT NECESSAIRE A LA DETECTION DE NOS DEUX TYPES DATTTAQUE
+void Security_Event::Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Windows_System_Logs& WSysL, const Linux_Syslog& LSys, const Linux_Secure& LSec, Security_Event& Export_event){                //POUR L'ANALYSE ON VA SEULEMENT PRENDRE LE NOMBRE LIMITÉ DATTRIBUT NECESSAIRE A LA DETECTION DE NOS DEUX TYPES DATTTAQUE
     //Attributs de Logs   
     int Id_Logs_Analyzer = Log.getId();                                //Utile pour creer le vecteur contenant les id des logs liés a l'événement suspect
     int Processus_Analyzer = Log.getProcessusId();
@@ -117,7 +117,7 @@ void Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Wi
 }
 
 
-
+//Proposer d'archiver le document
 
 
     

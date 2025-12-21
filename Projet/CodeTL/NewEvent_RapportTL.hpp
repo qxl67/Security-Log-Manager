@@ -42,8 +42,6 @@ public:
 
     //CREER LE PROTOTYPE ET LA METHODE POUR RECUPERER ET COMPILER LES SECURITY_EVENT DANS UN MEME RAPPORT
     static std::vector<Event_Rapport> createRapport(std::vector<Security_Event*>& events, int time_window_seconds);
-
-
     
 
 //CREER LE PROTOTYPE ET LA METHODE POUR EXPORTER LES RAPPORTS DANS LES ARCHIVES
