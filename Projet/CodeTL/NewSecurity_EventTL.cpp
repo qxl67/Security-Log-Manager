@@ -65,7 +65,7 @@ void Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Wi
 
     Connection_Attempt& Attempt_2 = Attempt[Source_IP_Analyzer];    
 
-    if (delay(Attempt_2.Last_Attempt_time, CurrentTime_Analyzer, 5)) {
+    if (delay(Attempt_2.Last_Attempt_time, CurrentTime_Analyzer, 30)) {   // espacement max fixé a 30 seconde entre les tentative de bruteforce
         Attempt_2.Attempt_count++;
 
         if (Attempt_2.Attempt_count >= 3) {
@@ -78,13 +78,15 @@ void Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Wi
 
             std::cout << Event_Description << std::endl;            // Affichage du message d'alerte dans le terminal
 
-            int Id_Security_Event = /*ID GENERÉ PAR L'ALGO DE TOM*/;         //REMPLIR LA CLASSE AVEC L'ID STATIC GENERÉ PAR L'ALGO DE TOM
+            int Id_Security_Event = /*ID GENERÉ PAR L'ALGO DE TOM*/;   //REMPLIR LA CLASSE AVEC L'ID STATIC GENERÉ PAR L'ALGO DE TOM
+            Security_Event::EventType Event_Type = Security_Event::EventType::BRUTEFORCE; 
             Security_Event::EventGravity Event_Gravity = Security_Event::EventGravity::HIGH;           //On attribut a l'attaque par bruteforce une priorité elevée compte tenu de nos critéres d,analyse
             std::vector<int> Associated_Logs = Log_ids[Source_IP_Analyzer];
             std::time_t Event_Time = std::time(nullptr);  //On enregistre le time_stamp du moment de l'analyse
 
             Export_event = Security_Event(               //On rempli notre objet avec les valeurs 
                 Id_Security_Event,
+                Event_Type,
                 Event_Description,
                 Event_Gravity,
                 Associated_Logs,
@@ -108,8 +110,15 @@ void Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Wi
     // Mise à jour du dernier timestamp
     Attempt_2.Last_Attempt_time = CurrentTime_Analyzer;
     return;
+
+
+    //CREER L'ALGO DES ATTAQUE PAR SCAN
+
 }
 
 
 
+
+
+    
 

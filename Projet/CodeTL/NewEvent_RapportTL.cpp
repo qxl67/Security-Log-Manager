@@ -1,5 +1,5 @@
 //Ajouter les includes qui manque, les #ifndef #define, #endif
-#include "Event_Rapport.hpp"
+#include "NewEvent_RapportTL.hpp"
 #include <vector>
 #include <set>
 #include <ctime>
@@ -13,7 +13,7 @@ bool Event_Rapport::delay(std::time_t First_Time, std::time_t Last_Time, int Max
 
 //implementer la methode d'ID de Tom pour donner un ID aux rapport
 
-std::vector<Event_Rapport> Event_Rapport::createRapport(std::vector<Security_Event*>& events, int time_window_seconds) {
+std::vector<Event_Rapport> Event_Rapport::createRapport(std::vector<Security_Event*>& events) {
     std::vector<Event_Rapport> rapports;
     std::set<Security_Event*> already_used;
     //int report_id = 1;
@@ -26,22 +26,21 @@ std::vector<Event_Rapport> Event_Rapport::createRapport(std::vector<Security_Eve
 
         std::vector<Security_Event*> correlated_events;
         correlated_events.push_back(ref);
+        std::time_t last_time = ref->getTimeStamp();  // On utilise une fenetre glissante pour que les evenement proches, mais en dehors de la fenetre d,analyse soient quand meme affiliés au meme evenement
 
         for (size_t j = i + 1; j < events.size(); ++j) {
             Security_Event* candidate = events[j];
 
-            if (already_used.count(candidate))
-                continue;
+            if (already_used.count(candidate)) continue;
 
             // On ne corrèle que si c'est le même type
-            if (candidate->getEventType() != ref->getEventType())
-                continue;
+            if (candidate->getEventType() != ref->getEventType()) continue;
 
             // On ne corrèle que si c'est dans la fenêtre de temps
-            if (!delay(ref->getTimeStamp(), candidate->getTimeStamp(), time_window_seconds))
-                continue;
-
+            if (!delay(last_time, candidate->getTimeStamp(), 30)) continue;         // délais fixé a 30 secondes pour associer les evenements de nature similaires
+            
             correlated_events.push_back(candidate);
+            last_time = candidate->getTimeStamp();
         }
 
         // Crée un rapport seulement si corrélation significative (>=2 événements)

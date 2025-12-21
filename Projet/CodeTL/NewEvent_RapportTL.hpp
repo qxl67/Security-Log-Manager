@@ -1,10 +1,8 @@
 //Ajouter les includes qui manque, les #ifndef #define, #endif
-#ifndef EVENT_RAPPORT_HPP
-#define EVENT_RAPPORT_HPP
+
 #include <vector>
-#include <string>
 #include <ctime>
-#include "Security_Event.hpp"
+#include "NewSecurity_EventTL.hpp"
 #include <iostream>
 
 //DANS LE CAS DE NOTRE DEMONSTRATION ON VA CORRELER LES EVENEMENTS DE SÉCURITÉ PAR TYPE, DANS UN DELAIS DONNÉ. 
@@ -63,4 +61,3 @@ private:
     std::time_t Time_Stamp;
 
 };
-#endif
