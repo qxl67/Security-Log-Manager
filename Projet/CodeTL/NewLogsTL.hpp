@@ -48,9 +48,13 @@ public: // Permet de creer le constructeur
     // Prototype de la fonction pour afficher le log
     virtual void displayLogs() const;
 
+    //Creer une méthode pour trier les logs par ordre chronologique. On doit utiliser une methode de comparaison entre objet afin de repondre au exigences du proche.
+    //On doit donc comparer les objets par leur time_stamp pour les classer chronologiauement malgré le fait qu'il viennent de systeme (windows/linux) différents.
+
     //Creer une méthode pour suppirmer une entrée dans les logs, ou pour modifier manuellement un attribut dans une des entrée 
 
 };
+
 
 
 
