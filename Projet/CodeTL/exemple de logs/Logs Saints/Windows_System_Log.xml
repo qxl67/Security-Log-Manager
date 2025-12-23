@@ -8,12 +8,12 @@
             <Task>0</Task> 
             <Opcode>1</Opcode> 
             <Keywords>0x8000000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:56:36.2797360Z" /> 
+            <TimeCreated SystemTime=2025/10/15 23:08:05 /> 
             <EventRecordID>20607</EventRecordID> 
             <Correlation ActivityID="{db4642eb-a396-49dc-8702-1c4603c4028f}" /> 
             <Execution ProcessID="2544" ThreadID="21132" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user1</Computer> 
             <Security UserID="S-1-5-18" /> 
         </System>
         <EventData>
@@ -34,12 +34,12 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8000000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:53:40.1480753Z" /> 
+            <TimeCreated SystemTime=2025/10/16 07:30:05 /> 
             <EventRecordID>20606</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="1812" ThreadID="6208" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user1</Computer> 
             <Security UserID="S-1-5-18" /> 
         </System>
         <EventData>
@@ -59,12 +59,12 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8000400000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:53:38.9882299Z" /> 
+            <TimeCreated SystemTime=2025/10/16 08:28:38 /> 
             <EventRecordID>20602</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="1956" ThreadID="3604" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user2</Computer> 
             <Security UserID="S-1-5-21-515422283-4077433341-1561936192-369031" /> 
         </System>
         <EventData>
@@ -84,12 +84,12 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8000400000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:53:38.7212109Z" /> 
+            <TimeCreated SystemTime=2025/10/16 12:30:05 /> 
             <EventRecordID>20601</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="1696" ThreadID="4192" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user2</Computer> 
             <Security UserID="S-1-5-21-515422283-4077433341-1561936192-369031" /> 
         </System>
         <EventData>
@@ -108,13 +108,13 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8000000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:23:22.7940686Z" /> 
+            <TimeCreated SystemTime=2025/10/16 15:59:12 /> 
             <EventRecordID>20593</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="2628" ThreadID="27212" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
-            <Security UserID="S-1-5-19" /> 
+            <Computer>user1</Computer> 
+            <Security UserID="S-1-5-18" /> 
         </System>
         <EventData Name="TMP_EVENT_TIME_SOURCE_CHOSEN">
           <Data Name="TimeSource">temps.univ-lyon2.fr (ntp.m|0x0|0.0.0.0:123->159.84.145.131:123)</Data> 
@@ -132,12 +132,12 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8080000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:20:56.2454384Z" /> 
+            <TimeCreated SystemTime=2025/10/16 17:45:27 /> 
             <EventRecordID>20589</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="1940" ThreadID="21152" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user1</Computer> 
             <Security UserID="S-1-5-18" /> 
         </System>
         <EventData>
@@ -157,12 +157,12 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8080000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:18:47.2488104Z" /> 
+            <TimeCreated SystemTime=2025/10/17 07:22:54 /> 
             <EventRecordID>20588</EventRecordID> 
             <Correlation ActivityID="{1add10f3-651e-0000-fd4d-e21a1e65dc01}" /> 
             <Execution ProcessID="2128" ThreadID="27572" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user2</Computer> 
             <Security UserID="S-1-5-21-515422283-4077433341-1561936192-369031" /> 
         </System>
         <EventData>
@@ -189,13 +189,13 @@
             <Task>0</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x8000000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:07:40.4678640Z" /> 
+            <TimeCreated SystemTime=2025/10/17 07:47:10 /> 
             <EventRecordID>20581</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="14356" ThreadID="1956" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
-            <Security UserID="S-1-5-19" /> 
+            <Computer>user1</Computer> 
+            <Security UserID="S-1-5-18" /> 
         </System>
         <EventData>
             <Data Name="ThreatId">{d9499520-4607-468c-a5ea-f764fb80f885}</Data> 
@@ -214,12 +214,12 @@
             <Task>1028</Task> 
             <Opcode>0</Opcode> 
             <Keywords>0x4000000000000000</Keywords> 
-            <TimeCreated SystemTime="2025-12-16T09:06:00.6840118Z" /> 
+            <TimeCreated SystemTime=2025/10/17 08:40:30 /> 
             <EventRecordID>20559</EventRecordID> 
             <Correlation /> 
             <Execution ProcessID="2788" ThreadID="11848" /> 
             <Channel>System</Channel> 
-            <Computer>UL200011772.ADLYON2.UNIV-LYON2.FR</Computer> 
+            <Computer>user3</Computer> 
             <Security UserID="S-1-5-20" /> 
         </System>
         <EventData>

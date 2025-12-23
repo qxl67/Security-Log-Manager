@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <events log_type="syslog" os="linux">
   <event>
-    <timestamp>Oct 11 22:14:01</timestamp>
+    <timestamp>2025/10/15 22:30:12</timestamp>
     <hostname>server1</hostname>
     <process>systemd</process>
     <pid>1</pid>
@@ -10,7 +10,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:16:43</timestamp>
+    <timestamp>2025/10/15 23:03:45</timestamp>
     <hostname>server1</hostname>
     <process>systemd</process>
     <pid>1</pid>
@@ -19,7 +19,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:20:12</timestamp>
+    <timestamp>2025/10/15 23:55:01</timestamp>
     <hostname>server1</hostname>
     <process>CRON</process>
     <pid>2145</pid>
@@ -28,7 +28,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:22:55</timestamp>
+    <timestamp>2025/10/16 11:10:23</timestamp>
     <hostname>server1</hostname>
     <process>NetworkManager</process>
     <pid>712</pid>
@@ -37,7 +37,7 @@
   </event>
 
   <event >
-    <timestamp>Oct 11 22:25:31</timestamp>
+    <timestamp>2025/10/16 12:30:11</timestamp>
     <hostname>server1</hostname>
     <process>systemd-resolved</process>
     <pid>512</pid>
@@ -46,7 +46,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:28:09</timestamp>
+    <timestamp>2025/10/16 14:55:54</timestamp>
     <hostname>server1</hostname>
     <process>sshd</process>
     <pid>654</pid>
@@ -55,7 +55,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:30:44</timestamp>
+    <timestamp>2025/10/16 18:05:35</timestamp>
     <hostname>server1</hostname>
     <process>myapp</process>
     <pid>2341</pid>
@@ -64,7 +64,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:33:10</timestamp>
+    <timestamp>2025/10/16 20:51:22</timestamp>
     <hostname>server1</hostname>
     <process>kernel</process>
     <severity>info</severity>
@@ -72,7 +72,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:35:58</timestamp>
+    <timestamp>2025/10/17 09:12:34</timestamp>
     <hostname>server1</hostname>
     <process>logrotate</process>
     <pid>3210</pid>
@@ -81,7 +81,7 @@
   </event>
 
   <event>
-    <timestamp>Oct 11 22:38:21</timestamp>
+    <timestamp>2025/10/17 10:15:19</timestamp>
     <hostname>server1</hostname>
     <process>apt</process>
     <pid>4321</pid>
