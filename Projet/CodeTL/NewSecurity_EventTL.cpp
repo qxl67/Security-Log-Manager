@@ -18,7 +18,7 @@ bool Security_Event::delay(std::time_t First_Time, std::time_t Last_Time, int Ma
     return std::difftime(Last_Time, First_Time) <= Max_Time;      // regler pour un écart de 5 sec entre chaque tentative, attemtion Max_Time renvera toujours des valeurs en seconde
 }
 
-void Security_Event::Logs_Analyzer(const Logs& Log, const Windows_Security_Logs& WSecL, const Windows_System_Logs& WSysL, const Linux_Syslog& LSys, const Linux_Secure& LSec, Security_Event& Export_event){                //POUR L'ANALYSE ON VA SEULEMENT PRENDRE LE NOMBRE LIMITÉ DATTRIBUT NECESSAIRE A LA DETECTION DE NOS DEUX TYPES DATTTAQUE
+void Security_Event::Logs_Analyzer(const Log& Log, const Windows_Security_Logs& WSecL, const Windows_System_Logs& WSysL, const Linux_System_Log& LSys, const Linux_Security_Log& LSec, Security_Event& Export_event){                //POUR L'ANALYSE ON VA SEULEMENT PRENDRE LE NOMBRE LIMITÉ DATTRIBUT NECESSAIRE A LA DETECTION DE NOS DEUX TYPES DATTTAQUE
     //Attributs de Logs   
     int Id_Logs_Analyzer = Log.getId();                                //Utile pour creer le vecteur contenant les id des logs liés a l'événement suspect
     int Processus_Analyzer = Log.getProcessusId();
@@ -29,14 +29,6 @@ void Security_Event::Logs_Analyzer(const Logs& Log, const Windows_Security_Logs&
     std::string Source_IP_Analyzer = LSec.getSourceIP();      //On recupére les attributs utiles pour mener l'analyse des attaques bruteforce
     std::string User_Analyzer = LSec.getUser();  
     //std::string Message_Analyzer = LSec.getMessage();   // Utilise pour l'analyse du SCAN
-
-    //Attributs utilisés Linux_Syslog
-        //Aucun attributs implémentés pour la demonstration
-
-    //Attributs utilisés de Windows_Security_Logs
-        //Aucun attributs implémentés pour la demonstration
-
-    //Attributs utilisés de Windows_System_Logs
         
 
     //ALGO DE DETECTION D'ATTAQUE BRUTEFORCE SUR LOG LINUX
@@ -51,7 +43,7 @@ void Security_Event::Logs_Analyzer(const Logs& Log, const Windows_Security_Logs&
     std::string Event_Description;                                         //Event_Description servira a assembler nos informations d'evenement
 
 
-    if (LSec.getAction() != "login_failed") {               // On verifie qu'on a d'abord un cas de login_failed pour continuer
+    if (LSec.getAction() != "login_failed") {               // On verifie qu'on a d'abord un cas de login_failed pour continuer + RAJOUTER LES AUTRES ELEMENT D'ANALYSE pour WINDOWS
         return;
     }     
     

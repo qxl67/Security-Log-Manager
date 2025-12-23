@@ -1,5 +1,4 @@
 //Ajouter les includes qui manque, les #ifndef #define, #endif
-
 #include <iostream>
 #include <vector>
 #include <ctime>
