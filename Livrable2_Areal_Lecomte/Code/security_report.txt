@@ -1,0 +1,38 @@
+==================== SECURITY REPORT ====================
+Report ID       : 0
+Creation date   : Tue Jan  6 23:45:25 2026
+Global priority : CRITICAL
+
+Included Security Events:
+ - Event ID 0
+ - Event ID 1
+
+==================== DETAILS ====================
+
+Security Event ID : 0
+Type              : BRUTEFORCE
+Gravity           : HIGH
+Description       : Bruteforce detected: 3 login_failed within 30 seconds
+User              : admin
+Logs involved     : 22 23 24 
+Actions:
+ - login_failed
+ - login_failed
+ - login_failed
+
+-------------------------------------------------
+Security Event ID : 1
+Type              : BRUTEFORCE
+Gravity           : HIGH
+Description       : Bruteforce detected: 3 login_failed within 30 seconds
+User              : 
+Logs involved     : 34 35 36 
+Actions:
+ - login_failed
+ - login_failed
+ - login_failed
+
+-------------------------------------------------
+
+==================== RECOMMENDATION ====================
+Immediate action required: block affected accounts and audit the system.

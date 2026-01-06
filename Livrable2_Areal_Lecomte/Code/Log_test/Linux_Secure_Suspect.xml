@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Events log_type="secure" os="linux">
+
+<!-- Scenario d'attaque par brute force. On part sur les caractéristiques suivante:
+3 échecs SSH, même utilisateur, même IP d'origine, delais de 30 secondes--> 
+
+  <event> <!-- pas d'event -->
+    <timestamp>2025/10/15 23:50:01</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>info</severity>
+    <action>login_attempt</action>
+    <user>user1</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Connection attempt</message>
+  </event>
+
+  <event> <!-- pas d'event -->
+    <timestamp>2025/10/15 23:50:06</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>user1</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- début event -->
+    <timestamp>2025/10/16 01:14:15</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>info</severity>
+    <action>login_attempt</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Connection attempt</message>
+  </event>
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:21</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:27</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:32</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:34</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:37</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:39</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>warning</severity>
+    <action>login_failed</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+
+  <event> <!-- event -->
+    <timestamp>2025/10/16 01:14:41</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>info</severity>
+    <action>login_success</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Failed password for admin</message>
+  </event>
+
+  <event> <!-- fin event -->
+    <timestamp>2025/10/16 01:14:32</timestamp>
+    <hostname>server1</hostname>
+    <process>sshd</process>
+    <severity>info</severity>
+    <action>login_success</action>
+    <user>admin</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>success password for admin</message>
+  </event>
+
+  <event>
+    <timestamp>2025/10/16 06:18:42</timestamp>
+    <hostname>server1</hostname>
+    <process>sudo</process>
+    <severity>info</severity>
+    <action>privilege_escalation</action>
+    <user>user1</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Command executed with sudo</message>
+  </event>
+
+  <event>
+    <timestamp>2025/10/16 06:20:05</timestamp>
+    <hostname>server1</hostname>
+    <process>systemd-logind</process>
+    <severity>info</severity>
+    <action>session_opened</action>
+    <user>user1</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>New session opened</message>
+  </event>
+
+  <event>
+    <timestamp>2024/10/16 06:22:33</timestamp>
+    <hostname>server1</hostname>
+    <process>passwd</process>
+    <severity>info</severity>
+    <action>password_change</action>
+    <user>user1</user>
+    <source_ip>203.0.113.45</source_ip>
+    <message>Password changed</message>
+  </event>
+
+</Events>
